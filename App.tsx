@@ -19,7 +19,7 @@ export default function App() {
     }
   }, []);
 
-  const reqDats = user.map((x) => <div>{x.name}</div>);
+  const reqDats = user.map((x) => <div key={x.id}>{x.name}</div>);
 
   return (
     <div>
